@@ -14,7 +14,7 @@
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
     "watch:sassprefixer": "onchange sass/*.scss -- npm run build-dev"
   },
-  "author": "Michael",
+  "author": "micbab",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
