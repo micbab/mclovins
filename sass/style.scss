@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins&display=swap');
+
+/* == GLOBAL == */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* == HTML == */
+HTML {
+    font-size: var(--FS);
+    font-family: var(--FF);
+}
+
+/* == HEADER == */
+.header {
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.header__h1 {
+    text-align: center;
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+.header__nav {
+    background-color: var(--NAV-BGCOLOR);
+    border-bottom: var(--BORDERS);
+    font-weight: bold;
+}
+
+.header__ul {
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.hero-index-page{
+    max-width: 100vw;
+    height: auto;
+}
+
+@media screen {
+    .header__h1::before {
+        content: '🍔'
+    }
+}
+
+/* == ROOT == */
+:root {
+
+/* == FONTS == */
+--FF: "Caveat", sans-serif;
+--FS: clamp(1rem, 2.2vh, 1.5rem);
+
+/* == COLORS == */
+--BGCOLOR: #ffffff;
+--BODY-BGCOLOR: #ffffff;
+--BUTTON-COLOR: #ffffff;
+--FONT-COLOR: #000000;
+--HEADER-BGCOLOR: #ff0000;
+--HEADER-COLOR: #ffffff;
+--LINK-ACTIVE: #800000;
+--LINK-COLOR: #ffffff;
+--LINK-HOVER: #800000;
+--NAV-BGCOLOR: #ff0000;
+
+/* STANDARD PADDING */
+--PADDING-TB: 0.25em;
+--PADDING-SIDE: 2.5%;
+
+/* STANDARD MARGIN */
+--MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* == LINKS == */
+a:any-link {
+    color: var(--LINK-COLOR);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--LINK-HOVER);
+}
+
+a:active {
+    color: var(--LINK-ACTIVE);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* == BODY == */
+body{
+    font-family: 'Caveat', sans-serif;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* || FOOTER */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    text-align: center;
+  }
