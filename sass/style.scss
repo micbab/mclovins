@@ -4,15 +4,15 @@
 *,
 *::after,
 *::before {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* == HTML == */
 HTML {
-    font-size: var(--FS);
     font-family: var(--FF);
+    font-size: var(--FS);
 }
 
 /* == HEADER == */
@@ -23,29 +23,80 @@ HTML {
 }
 
 .header__h1 {
-    text-align: center;
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
-    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    text-align: center;
+    padding: 25px;
 }
 
 .header__nav {
     background-color: var(--NAV-BGCOLOR);
     border-bottom: var(--BORDERS);
     font-weight: bold;
+    padding: 25px;
 }
 
 .header__ul {
-    padding: var(--PADDING-TB) var(--PADDING-SIDE);
-    list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
     gap: 1rem;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 .hero-index-page{
-    max-width: 100vw;
-    height: auto;
+    position: relative;
+    text-align: center;
+    color: var(--BODY-BGCOLOR);
+}
+
+.hero-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.current-special-offers h2{
+    text-align: center;
+}
+
+.special-offer-1{
+    display: flex;
+    align-items: center;
+}
+
+.special-offer-1-img{
+    width: 300px;
+}
+
+.special-offer-1-img-text{
+    text-align: right;
+}
+
+.special-offer-1-text{
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-offer-2{
+    display: flex;
+    align-items: center;
+}
+
+.special-offer-2-img{
+    width: 300px;
+}
+
+.special-offer-2-img-text{
+    text-align: right;
+}
+
+.special-offer-2-text{
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen {
@@ -56,29 +107,18 @@ HTML {
 
 /* == ROOT == */
 :root {
-
-/* == FONTS == */
---FF: "Caveat", sans-serif;
---FS: clamp(1rem, 2.2vh, 1.5rem);
-
-/* == COLORS == */
 --BGCOLOR: #ffffff;
 --BODY-BGCOLOR: #ffffff;
 --BUTTON-COLOR: #ffffff;
+--FF: "Caveat", sans-serif;
 --FONT-COLOR: #000000;
+--FS: clamp(1rem, 2.2vh, 1.5rem);
 --HEADER-BGCOLOR: #ff0000;
 --HEADER-COLOR: #ffffff;
 --LINK-ACTIVE: #800000;
 --LINK-COLOR: #ffffff;
 --LINK-HOVER: #800000;
 --NAV-BGCOLOR: #ff0000;
-
-/* STANDARD PADDING */
---PADDING-TB: 0.25em;
---PADDING-SIDE: 2.5%;
-
-/* STANDARD MARGIN */
---MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
 /* == LINKS == */
@@ -102,18 +142,31 @@ a {
 /* == BODY == */
 body{
     font-family: 'Caveat', sans-serif;
-    min-height: 100vh;
-    max-width: 900px;
     margin: 0 auto;
+    max-width: 900px;
+    min-height: 100vh;
 }
 
-/* || FOOTER */
-
+/* == FOOTER == */
 .footer {
-    position: relative;
-    bottom: 0;
     background-color: var(--HEADER-BGCOLOR);
+    bottom: 0;
     color: var(--HEADER-COLOR);
-    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    position: relative;
     text-align: center;
+    padding: 25px;
   }
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__hours, .footer__contact, .footer__address {
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
