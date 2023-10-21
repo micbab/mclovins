@@ -15,6 +15,31 @@ HTML {
     font-size: var(--FS);
 }
 
+/* == ROOT == */
+:root {
+    --BGCOLOR: #ffffff;
+    --BODY-BGCOLOR: #ffffff;
+    --BUTTON-COLOR: #ffffff;
+    --FF: "Caveat", sans-serif;
+    --FONT-COLOR: #000000;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+    --HEADER-BGCOLOR: #ff0000;
+    --HEADER-COLOR: #ffffff;
+    --LINK-ACTIVE: #800000;
+    --LINK-COLOR: #ffffff;
+    --LINK-HOVER: #800000;
+    --NAV-BGCOLOR: #ff0000;
+    }
+
+/* == BODY == */
+body{
+    background-color: var(--BGCOLOR);
+    font-family: 'Caveat', sans-serif;
+    margin: 0 auto;
+    max-width: 900px;
+    min-height: 100vh;
+}
+
 /* == HEADER == */
 .header {
     position: relative;
@@ -49,6 +74,11 @@ HTML {
     color: var(--BODY-BGCOLOR);
 }
 
+.hero-index-page-img{
+width: 900px;
+height: auto;
+}
+
 .hero-centered {
     position: absolute;
     top: 50%;
@@ -57,6 +87,7 @@ HTML {
     font-size: 50px;
 }
 
+/* == CURRENT SPECIAL OFFERS == */
 .current-special-offers h2{
     text-align: center;
 }
@@ -105,20 +136,14 @@ HTML {
     }
 }
 
-/* == ROOT == */
-:root {
---BGCOLOR: #ffffff;
---BODY-BGCOLOR: #ffffff;
---BUTTON-COLOR: #ffffff;
---FF: "Caveat", sans-serif;
---FONT-COLOR: #000000;
---FS: clamp(1rem, 2.2vh, 1.5rem);
---HEADER-BGCOLOR: #ff0000;
---HEADER-COLOR: #ffffff;
---LINK-ACTIVE: #800000;
---LINK-COLOR: #ffffff;
---LINK-HOVER: #800000;
---NAV-BGCOLOR: #ff0000;
+/* == ABOUT == */
+.about-page-img{
+    width: 900px;
+    height: auto;
+}
+
+.about-page-text{
+    text-align: center;
 }
 
 /* == LINKS == */
@@ -139,14 +164,6 @@ a {
     text-decoration: none;
 }
 
-/* == BODY == */
-body{
-    font-family: 'Caveat', sans-serif;
-    margin: 0 auto;
-    max-width: 900px;
-    min-height: 100vh;
-}
-
 /* == FOOTER == */
 .footer {
     background-color: var(--HEADER-BGCOLOR);
@@ -160,6 +177,12 @@ body{
 .footer__container{
     display: flex;
     justify-content: space-between;
+    text-align: center;
+}
+
+.footer__container img {
+    width: 25px;
+    height: 25px;
 }
 
 .footer__hours, .footer__contact, .footer__address {
