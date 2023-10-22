@@ -136,10 +136,50 @@ height: auto;
     }
 }
 
+/* == MENU == */
+.menu-page h1{
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.menu-items img {
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.menu-items img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.menu-items-details {
+    margin-left: 20px;
+}
+
+.menu-items-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-items-description {
+    font-size: 18px;
+}
+
+.menu-items-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 /* == CONTACT == */
 .contact h2{
     text-align: center;
 }
+
 form {
   max-width: 420px;
   margin: 25px auto;
@@ -191,6 +231,10 @@ textarea {
 .about-page-img{
     width: 900px;
     height: auto;
+}
+
+.about-page h2{
+    text-align: center;
 }
 
 .about-page-text{
