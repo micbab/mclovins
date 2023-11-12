@@ -72,11 +72,12 @@ body{
     position: relative;
     text-align: center;
     color: var(--BODY-BGCOLOR);
+    margin-bottom: 75px;
 }
 
 .hero-index-page-img{
-width: 900px;
-height: auto;
+    width: 900px;
+    height: auto;
 }
 
 .hero-centered {
@@ -88,8 +89,13 @@ height: auto;
 }
 
 /* == CURRENT SPECIAL OFFERS == */
+.current-special-offers{
+    margin-bottom: 50px;
+}
+
 .current-special-offers h2{
     text-align: center;
+    margin-bottom: 75px;
 }
 
 .special-offer-1{
@@ -130,20 +136,16 @@ height: auto;
     margin-right: auto;
 }
 
-@media screen {
-    .header__h1::before {
-        content: '🍔'
-    }
-}
-
 /* == MENU == */
 .menu-page h1{
     text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .menu-items {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .menu-items img {
@@ -178,53 +180,56 @@ height: auto;
 /* == CONTACT == */
 .contact h2{
     text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 form {
-  max-width: 420px;
-  margin: 25px auto;
+    max-width: 420px;
+    margin: 25px auto;
+    margin-bottom: 50px;
 }
 
 .feedback-input {
-  color: #000000;
-  font-family: 'Caveat', sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  background-color: transparent;
-  border: 2px solid #ff0000;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
+    color: #000000;
+    font-family: 'Caveat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
 }
 
 .feedback-input:focus {
-  border: 2px solid #ff0000;
+    border: 2px solid #ff0000;
 }
 
 textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
 }
 
 [type="submit"] {
-  font-family: 'Caveat', sans-serif;
-  width: 100%;
-  background: #ff0000;
-  border: 0px;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
+    font-family: 'Caveat', sans-serif;
+    width: 100%;
+    background: #ff0000;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
 }
 [type="submit"]:hover {
-  background: #800000;
+    background: #800000;
 }
 
 /* == ABOUT == */
@@ -235,10 +240,18 @@ textarea {
 
 .about-page h2{
     text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    
 }
 
-.about-page-text{
+.about-page-text-1, .about-page-text-2{
     text-align: left;
+    margin-bottom: 25px;
+}
+
+.about-page-text-3{
+    margin-bottom: 50px;
 }
 
 /* == LINKS == */
@@ -273,6 +286,7 @@ a {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 75px;
 }
 
 .footer__container img {
@@ -287,4 +301,10 @@ a {
 
 .nowrap {
     white-space: nowrap;
+}
+
+@media screen {
+    .header__h1::before {
+        content: '🍔'
+    }
 }
